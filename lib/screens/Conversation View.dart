@@ -52,13 +52,111 @@ class ChatingView extends StatelessWidget {
       ),
 
 
-      // Messages Area
-      body: ListView(
-        padding: const EdgeInsets.all(10),
-        children: const [
-          Text("Hello 👋"),
-        ],
+    body: ListView(
+  padding: const EdgeInsets.all(12),
+  children: [
+
+    // Receiver Bubble
+    Align(
+      alignment: Alignment.centerLeft,
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 300),
+        margin: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 14,
+          vertical: 10,
+        ),
+        decoration: BoxDecoration(
+          color: const Color(0xff202c33),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+
+            Text(
+              "Hello 👋",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+            ),
+
+            SizedBox(height: 5),
+
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Text(
+                "10:30 PM",
+                style: TextStyle(
+                  color: Colors.white54,
+                  fontSize: 11,
+                ),
+              ),
+            ),
+          ],
+        ),
       ),
+    ),
+
+    // Sender Bubble
+    Align(
+      alignment: Alignment.centerRight,
+      child: Container(
+        constraints: const BoxConstraints(maxWidth: 300),
+        margin: const EdgeInsets.only(bottom: 10),
+        padding: const EdgeInsets.symmetric(
+          horizontal: 14,
+          vertical: 10,
+        ),
+        decoration: BoxDecoration(
+          color: const Color(0xff005c4b),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: const Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          children: [
+
+            Text(
+              "Hi, how are you?",
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 16,
+              ),
+            ),
+
+            SizedBox(height: 5),
+
+            Align(
+              alignment: Alignment.bottomRight,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+
+                  Text(
+                    "10:31 PM",
+                    style: TextStyle(
+                      color: Colors.white70,
+                      fontSize: 11,
+                    ),
+                  ),
+
+                  SizedBox(width: 4),
+
+                  Icon(
+                    Icons.done_all,
+                    size: 16,
+                    color: Colors.lightBlue,
+                  ),
+                ],
+              ),
+            ),
+          ],
+        ),
+      ),
+    ),
+  ],
+),
 
       // Bottom Message Input
       bottomNavigationBar: SafeArea(
