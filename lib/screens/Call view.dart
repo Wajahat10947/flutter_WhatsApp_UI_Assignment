@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:whatsapp/widgets/customCallsTiles.dart';
+import 'package:whatsapp/widgets/customBottomNavBar.dart';
 
 class CallView extends StatelessWidget {
   const CallView({super.key});
@@ -91,10 +92,10 @@ class CallView extends StatelessWidget {
           Expanded(child: ListView(
             children: [
 
-              customCallsTiles(
-            "User Call 1",
-            "30/April, 10:32PM",
-            "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            CustomCallTile(
+            title: "User Call 1",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
             ),
 
           Divider(
@@ -105,11 +106,11 @@ class CallView extends StatelessWidget {
 
 
           
-          customCallsTiles(
-          "User Call 2",
-          "1/May, 00:00PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+          CustomCallTile(
+            title: "User Call 2",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -118,11 +119,11 @@ class CallView extends StatelessWidget {
 
 
           
-          customCallsTiles(
-          "User Call 3",
-          "1/May, 00:00PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+          CustomCallTile(
+            title: "User Call 2",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -131,11 +132,11 @@ class CallView extends StatelessWidget {
 
 
           
-          customCallsTiles(
-          "User Call 4",
-          "30/April, 10:32PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+          CustomCallTile(
+            title: "User Call 3",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -143,11 +144,11 @@ class CallView extends StatelessWidget {
           ),
 
 
-          customCallsTiles(
-          "User Call 4",
-          "30/April, 10:32PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+         CustomCallTile(
+            title: "User Call 4",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -155,11 +156,11 @@ class CallView extends StatelessWidget {
           ),
 
 
-          customCallsTiles(
-          "User Call 5",
-          "30/April, 10:32PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+          CustomCallTile(
+            title: "User Call 5",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -167,11 +168,11 @@ class CallView extends StatelessWidget {
           ),
 
 
-          customCallsTiles(
-          "User Call 6",
-          "30/April, 10:32PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+         CustomCallTile(
+            title: "User Call 6",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -179,11 +180,11 @@ class CallView extends StatelessWidget {
           ),
 
 
-          customCallsTiles(
-          "User Call 7",
-          "30/April, 10:32PM",
-          "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
-          ),
+          CustomCallTile(
+            title: "User Call 7",
+            time: "30/April, 10:32PM",
+            image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png"
+            ),
           Divider(
           color: Color.fromARGB(255, 220, 220, 220),
           thickness: 1.5,
@@ -200,31 +201,8 @@ class CallView extends StatelessWidget {
         
       ),
       
-       bottomNavigationBar: BottomNavigationBar(
-      currentIndex: 0,
-      type: BottomNavigationBarType.fixed,
-      selectedItemColor: Color(0xFF21C063),
-      unselectedItemColor: Colors.grey,
+      bottomNavigationBar: BottomNav(),
 
-  items: const [
-    BottomNavigationBarItem(
-      icon: Icon(Icons.chat),
-      label: "Chats",
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.update),
-      label: "Status",
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.groups),
-      label: "Communities",
-    ),
-    BottomNavigationBarItem(
-      icon: Icon(Icons.call),
-      label: "Calls",
-    ),
-  ],
-),
 
     );
   }

@@ -1,16 +1,35 @@
 // ignore: file_names
 import 'package:flutter/material.dart';
+import 'package:whatsapp/screens/Conversation%20View.dart';
 
-Widget customChatTiles(title, subtitle, image){
-  return ListTile(
-    title: Text("$title", style: TextStyle(fontFamily: "Poppins", fontSize: 18, fontWeight: FontWeight.w600),),
-    subtitle: Text("$subtitle", style: TextStyle(fontFamily: "Roboto", fontSize: 14, fontWeight: FontWeight.w400)),
-    leading: CircleAvatar(backgroundImage: NetworkImage("$image")),
-    trailing: Text(
-      "3:14 pm",
-      style: TextStyle(color: const Color.fromARGB(255, 210, 20, 20)),
-    ),
-  );
-  
+class CustomChatTile extends StatelessWidget {
+  final String title;
+  final String subtitle;
+  final String image;
 
+  const CustomChatTile({
+    super.key,
+    required this.title,
+    required this.subtitle,
+    required this.image,
+  });
+
+  @override
+  Widget build(BuildContext context) {
+    return ListTile(
+      title: Text(title),
+      subtitle: Text(subtitle),
+      leading: CircleAvatar(
+        backgroundImage: NetworkImage(image),
+      ),
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) => const ChatingView(),
+          ),
+        );
+      },
+    );
+  }
 }

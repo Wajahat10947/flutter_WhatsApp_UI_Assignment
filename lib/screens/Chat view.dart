@@ -58,10 +58,10 @@ class ChatView extends StatelessWidget {
           Expanded(
             child: ListView(
               children: [
-                customChatTiles(
-                  "User Name 1",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 1",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",             
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -69,10 +69,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 2",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 2",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -80,10 +80,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 3",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+               CustomChatTile(
+                  title: "User Name3",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -91,10 +91,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 4",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                 CustomChatTile(
+                  title: "User Name 4",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -102,10 +102,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 5",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                 CustomChatTile(
+                  title: "User Name 5",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -113,10 +113,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 6",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 6",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -124,10 +124,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 7",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                 CustomChatTile(
+                  title: "User Name 7",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -135,10 +135,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 8",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 8",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -146,10 +146,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 9",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                 CustomChatTile(
+                  title: "User Name 9",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -157,10 +157,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 10",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 10",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -168,10 +168,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 11",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                CustomChatTile(
+                  title: "User Name 11",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
@@ -179,10 +179,10 @@ class ChatView extends StatelessWidget {
                   height: 0, // tight spacing
                 ),
 
-                customChatTiles(
-                  "User Name 13",
-                  "User Message Here",
-                  "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
+                 CustomChatTile(
+                  title: "User Name 12",
+                  subtitle: "User Message Here",
+                  image: "https://static.vecteezy.com/system/resources/thumbnails/027/951/137/small/stylish-spectacles-guy-3d-avatar-character-illustrations-png.png",
                 ),
                 Divider(
                   color: Color.fromARGB(255, 220, 220, 220),
